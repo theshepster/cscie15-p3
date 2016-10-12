@@ -10,7 +10,7 @@ class LoremController extends Controller
 {
     public function index()
     {
-        return view('lorem.index');
+        return view('lorem.store');
     }
 
     public function store()

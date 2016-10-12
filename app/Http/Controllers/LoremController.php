@@ -8,13 +8,9 @@ use App\Http\Requests;
 
 class LoremController extends Controller
 {
-    public function index()
+    public function __invoke()
     {
-        return view('lorem.store');
+        return view('pages.lorem');
     }
 
-    public function store()
-    {
-        return view('lorem.store');
-    }
 }

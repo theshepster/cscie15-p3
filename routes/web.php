@@ -16,13 +16,13 @@ Route::get('/', function () {
 });
 
 # Access user generation page
-Route::get('/users', 'UserController@index')->name('users.index');
+Route::get('/users', 'UserController')->name('users');
 
 # Sumbit form for user generation
-Route::post('/users', 'UserController@store')->name('users.store');
+Route::post('/users', 'UserController')->name('users');
 
 # Access user generation page
-Route::get('/lorem', 'LoremController@index')->name('lorem.index');
+Route::get('/lorem', 'LoremController')->name('lorem');
 
 # Sumbit form for user generation
-Route::post('/lorem', 'LoremController@store')->name('lorem.store');
+Route::post('/lorem', 'LoremController')->name('lorem');

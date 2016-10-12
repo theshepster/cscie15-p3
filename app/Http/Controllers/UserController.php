@@ -8,14 +8,8 @@ use App\Http\Requests;
 
 class UserController extends Controller
 {
-    public function index()
+    public function __invoke()
     {
-        return view('users.index');
+        return view('pages.users');
     }
-
-    public function store()
-    {
-        return view('users.store');
-    }
-
 }

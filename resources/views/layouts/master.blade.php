@@ -1,25 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     @include('includes.head')
+    @yield('custom-head')
 </head>
+
 <body>
-<div class="container">
 
-    <header class="row">
-        @include('includes.header')
-    </header>
+    @include('includes.header')
 
-    <div id="main" class="row">
+    @yield('content')
 
-        @yield('content')
+    @include('includes.footer')
 
-    </div>
-
-        <footer class="row">
-            @include('includes.footer')
-        </footer>
-
-    </div>
+    @include('includes.javascript')
 </body>
 </html>

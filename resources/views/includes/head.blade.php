@@ -1,7 +1,18 @@
-<meta charset="utf-8">
-<meta name="author" content="Shep Moore-Berg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>P3</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
 
-<title>Shep Moore-Berg, DWA-15 Project 3</title>
+    <!-- Shared custom CSS -->
+    <link href="{{ URL::asset('css/shared.css') }}" rel="stylesheet">
 
-<!-- load bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+

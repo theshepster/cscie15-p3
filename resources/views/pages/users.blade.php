@@ -32,10 +32,6 @@
                 <label class="control-label crsa-selected">
                     <input type="checkbox" name="birthday">Include Birthday
                 </label>
-                <br>
-                <label class="control-label crsa-selected">
-                    <input type="checkbox" name="profile"}}>Include Profile
-                </label>
             </div>
             <button type="submit" class="btn">Generate Users</button>
         </form>

@@ -4,8 +4,12 @@
     <div class="container">
         <h3>Users:</h3>
         <ul>
-            @foreach ($names as $name)
-                <li>{{$name}}</li>
+            @foreach (range(0,$count-1) as $i)
+                <li>{{$names[$i]}}
+                    @if ($bdays)
+                        <br> {{$bdays[$i]}}
+                    @endif
+                </li>
             @endforeach
         </ul>
     </div>

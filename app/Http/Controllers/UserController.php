@@ -21,66 +21,60 @@ class UserController extends Controller
             'count' => 'min:1|max:99'
         ]);
 
-        $names = generateRandomUsers();
+        $count = $request->input('count');
+        $showBday = $request->input('birthday');
+        $names = generateRandomUsers($count);
 
-        return view('pages.users-submit')->with('names', $names);
+        if ($showBday)
+        {
+            $bdays = generateRandomBirthdays($count);
+        }
+        else
+        {
+            $bdays = false;
+        }
+
+        return view('pages.users-submit')->with(['names' => $names,
+                                                 'bdays' => $bdays,
+                                                 'count' => $count,]);
     }
 }
 
-function generateRandomUsers()
+function generateRandomUsers($n)
 {
-    $names = [
-        'Tyisha Rondon',
-        'Georgina Klingbeiz',
-        'Nigel Krueger',
-        'Kami Duty',
-        'Oswaldo Coulson',
-        'Todd Sweeny',
-        'Roselee Robarge',
-        'Jeane Cazares',
-        'Luna Tobar',
-        'Gigi Mirando',
-        'Shon Washburn',
-        'Diamond Groseclose',
-        'Zachery Pomeroy',
-        'Larry Lash',
-        'Shan Gutirrez',
-        'Deidre Holte',
-        'Cathi Chasteen',
-        'Lilian Mcroy',
-        'Julieta Carstensen',
-        'George Ivery',
-        'Felicia Santillanes',
-        'Lavette Almond',
-        'Karly Degennaro',
-        'Nida Wiggin',
-        'Elin Holliday',
-        'Myesha Pouliot',
-        'Nikia Sabella',
-        'Myrtis Batten',
-        'Alphonse Ritter',
-        'Rico Mcpartland',
-        'Harriett Seppala',
-        'Stan Sanroman',
-        'Mia Antunez',
-        'Trina Greenblatt',
-        'Danial Laguna',
-        'Agripina Ambrose',
-        'Nelida Noda',
-        'Johnathon Grist',
-        'Joni Orenstein',
-        'Wade Ellis',
-        'Teodora Hemby',
-        'Yadira Glaser',
-        'Rosella Feeney',
-        'David Benningfield',
-        'Wen Dowless',
-        'Nicola Meldrum',
-        'Cher Sloane',
-        'Laurine Greenway',
-        'Serita Shoaf',
-        'Lewis Noyes',
-    ];
 
-    return $names;
+    $path = storage_path('usernames.txt');
+    $names = file($path);
+    if ($n == 1)
+    {
+        return array(array_rand(array_flip($names), $n));
+    }
+    return array_rand(array_flip($names), $n);
+}
+
+function generateRandomBirthdays($n)
+{
+    $bdays = array();
+
+    foreach(range(1,$n) as $i)
+    {
+        $years = range(1923, 2007);
+        $yearkey = array_rand($years);
+        $year = $years[$yearkey];
+
+        $months = range(1, 12);
+        $monthkey = array_rand($months);
+        $month = $months[$monthkey];
+
+        $days = range(1,29);
+        $daykey = array_rand($days);
+        $day = $days[$daykey];
+
+        $bday = "";
+        $bday .= $month . "-" . $day . "-" . $year;
+
+        $bdays[]  = $bday;
+    }
+
+    return $bdays;
 }

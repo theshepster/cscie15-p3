@@ -36,7 +36,16 @@
             <button type="submit" class="btn">Generate Ipsum</button>
         </form>
 
-        @yield('errors')
+        @if(count($errors) > 0)
+            <div class="alert alert-danger">
+                Error!
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
     </div>
 

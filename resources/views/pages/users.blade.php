@@ -24,13 +24,18 @@
             <label class="control-label">Number of users to generate
                 <select class="form-control" data-pg-collapsed name="count">
                     @for($i = 1; $i < 100; $i++)
-                        <option>{{$i}}</option>
+                        @if (old('count') == $i || $count == $i)
+                            <option selected>
+                        @else
+                            <option>
+                        @endif
+                        {{$i}}</option>
                     @endfor
                 </select>
             </label>
             <div class="checkbox">
                 <label class="control-label crsa-selected">
-                    <input type="checkbox" name="birthday">Include Birthday
+                    <input type="checkbox" name="birthday" @if ($bdays != 0) {{"checked"}} @endif >Include Birthday
                 </label>
             </div>
             <button type="submit" class="btn">Generate Users</button>

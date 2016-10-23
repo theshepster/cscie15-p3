@@ -10,8 +10,9 @@ class UserController extends Controller
 {
     public function index()
     {
-
-        return view('pages.users');
+        $count = 1;
+        $bdays = false;
+        return view('pages.users')->with(['count' => $count, 'bdays' => $bdays]);
     }
 
     public function submit(Request $request)

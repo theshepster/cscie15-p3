@@ -10,7 +10,7 @@ class LoremController extends Controller
 {
     public function index()
     {
-        return view('pages.lorem');
+        return view('pages.lorem')->with('count', 1);
     }
 
     public function submit(Request $request)
@@ -33,7 +33,15 @@ function generateIpsumParagraph()
 {
     $path = storage_path('applewords.txt');
     $words = file($path);
-    return array_rand(array_flip($words), 50);
+    shuffle($words);
+    $out = "";
+    $sentenceLength = 16;
+    for ($i = 0; $i<3; $i++)
+    {
+        $out .= implode(" ", array_slice($words, 0 + ($sentenceLength + 1)*$i, $sentenceLength*($i+1))) . ". ";
+
+    }
+    return $out;
 }
 
 function generateIpsum($n)

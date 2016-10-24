@@ -24,7 +24,7 @@
             <label class="control-label">Number of paragraphs
                 <select class="form-control" data-pg-collapsed name="count">
                     @for($i = 1; $i < 100; $i++)
-                        @if (old('count') == $i)
+                        @if ($count == $i)
                             <option selected>
                         @else
                             <option>

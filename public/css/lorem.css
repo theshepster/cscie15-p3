@@ -4,7 +4,9 @@ body {
 .main {
     padding: 40px 15px;
     text-align: center;
-    background-image: url("http://www.todayifoundout.com/wp-content/uploads/2014/11/crowd.jpg");
+    background-image: url("http://10236-presscdn-0-79.pagely.netdna-cdn.com/wp-content/uploads/2015/05/apple_products.png");
+    background-repeat: no-repeat;
+    background-position: center;
     height: 400px
 }
 

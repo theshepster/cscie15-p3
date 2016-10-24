@@ -5,18 +5,20 @@
 @endsection
 
 @section('custom-head')
-    <link href="{{ URL::asset('css/users.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/lorem.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
     <div class="container">
         <div class="main">
-            <h1>Apple Ipsum Generator</h1>
-            <p class="lead">Generate some paragraphs.
-                <br>It's like Epsom for your ipsum.</p>
+            <div class="caption">
+                <h1>Apple Ipsum Generator</h1>
+                <p class="lead">Generate some paragraphs.
+                    <br>It's like Epsom for your ipsum.</p>
+            </div>
         </div>
     </div>
-    <div class="container" id="user-form" role="form">
+    <div class="container" id="form" role="form">
         <form method="post" action="/lorem" data-pg-collapsed class="form-group">
 
             {{ csrf_field() }}

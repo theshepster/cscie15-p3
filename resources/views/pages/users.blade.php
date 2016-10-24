@@ -10,13 +10,15 @@
 
 @section('content')
     <div class="container">
-        <div class="main">
-            <h1>User Generator</h1>
-            <p class="lead">Use the form below to generate some fake users.
-            <br>Try it. It'll be fun.</p>
+        <div class="main" id="userimage">
+            <div class ="caption">
+                <h1>User Generator</h1>
+                <p class="lead">Use the form below to generate some fake users.
+                <br>Try it. It'll be fun.</p>
+            </div>
         </div>
     </div>
-    <div class="container" id="user-form" role="form">
+    <div class="container" id="form" role="form">
         <form method="post" action="/users" data-pg-collapsed class="form-group">
 
             {{ csrf_field() }}

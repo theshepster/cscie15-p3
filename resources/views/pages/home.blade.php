@@ -20,7 +20,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="first-slide" src="http://pinegrow.com/placeholders/img4.jpg" alt="First slide">
+                <img class="first-slide" src="http://www.todayifoundout.com/wp-content/uploads/2014/11/crowd.jpg" alt="Users">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>User Generator.</h1>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="item">
-                <img class="second-slide" src="http://pinegrow.com/placeholders/img3.jpg" alt="Second slide">
+                <img class="second-slide" src="https://static.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg" alt="Apple Ipsum">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Apple Ipsum.</h1>
@@ -40,12 +40,12 @@
                 </div>
             </div>
             <div class="item">
-                <img class="third-slide" src="http://pinegrow.com/placeholders/img8.jpg" alt="Third slide">
+                <img class="third-slide" src="https://static.pexels.com/photos/27791/pexels-photo.jpg" alt="More">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>More Projects.</h1>
                         <p>There's more where this came from. Not much more. Just some more.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">More Projects</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="http://p1.mooreberg.me" role="button">More Projects</a></p>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <img class="img-circle" src="http://pinegrow.com/placeholders/img6.jpg" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="http://images.techhive.com/images/article/2013/06/shutterstock_42883318_friendly_robot-100040734-medium.jpg" alt="User Generator" width="140" height="140">
                 <h2>User Generator</h2>
                 <p>Tired of making up fake users for testing your app? Too many John Does and Jane Smiths?</p>
                 <p>Click the button. Make up some users. Easy.</p>
@@ -69,17 +69,17 @@
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="img-circle" src="http://pinegrow.com/placeholders/img5.jpg" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Ipsum" width="140" height="140">
                 <h2>Apple Ipsum Generator</h2>
                 <p>Lorem ipsum dolor sit amet? How about Apple ipsum Macbook iPhone 6? Apple products are good for everything - now they're even good for boilerplate text.</p>
                 <p><a class="btn btn-default" href="/lorem" role="button">Generate Text »</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <img class="img-circle" src="http://pinegrow.com/placeholders/img1.jpg" alt="Generic placeholder image" width="140" height="140">
+                <img class="img-circle" src="http://www.clipartkid.com/images/158/picture-of-plus-sign-clipart-best-D40BLA-clipart.png" alt="More" width="140" height="140">
                 <h2>More Projects</h2>
                 <p>This is project 3 of 4 in Dynamic Web Applications, CSCIE-15, Fall 2016. Check out the rest of this semester's projects.</p>
-                <p><a class="btn btn-default" href="#" role="button">More »</a><br></p>
+                <p><a class="btn btn-default" href="http://p1.mooreberg.me" role="button">More »</a><br></p>
             </div>
             <!-- /.col-lg-4 -->
         </div>
@@ -92,7 +92,9 @@
                 <p class="lead">Don't waste time making up fake users. You focus on making your app. We'll focus on high-quality fake names. With all the time you save, maybe you should call your mom. She's worried about you.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="http://pinegrow.com/placeholders/img6.jpg" alt="Generic placeholder image">
+                <a href="/users">
+                    <img class="featurette-image img-responsive center-block" src="http://images.complex.com/complex/lrkda6djvfxsdg3w8lrg.jpg" alt="Users">
+                </a>
             </div>
         </div>
         <hr class="featurette-divider">
@@ -102,7 +104,9 @@
                 <p class="lead">If you can name the month and year each of the last six MacBook Pro updates were released, then you should find a new hobby. If you think populating boilerplate text with words like "Safari" and "iPhone" would be mildly amusing, then you've come to the right spot.</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" src="http://pinegrow.com/placeholders/img7.jpg" alt="Generic placeholder image">
+                <a href="/lorem">
+                    <img class="featurette-image img-responsive center-block" src="https://static.pexels.com/photos/159240/pexels-photo-159240.jpeg" alt="Apple Ipsum">
+                </a>
             </div>
         </div>
         <hr class="featurette-divider">
@@ -112,7 +116,9 @@
                 <p class="lead">This is project 3 of 4. That means two things: 1) there are two projects that preceded this project, and 2) there will be one more project after this one. Mysterious? No. It's very straightforward.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="http://pinegrow.com/placeholders/img9.jpg" alt="Generic placeholder image">
+                <a href="http://p1.mooreberg.me">
+                    <img class="featurette-image img-responsive center-block" src="https://static.pexels.com/photos/4636/person-woman-eyes-face.jpg" alt="More">
+                </a>
             </div>
         </div>
         <hr class="featurette-divider">

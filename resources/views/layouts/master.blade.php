@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     @include('includes.head')
-    @yield('custom-head')
 </head>
 
 <body>

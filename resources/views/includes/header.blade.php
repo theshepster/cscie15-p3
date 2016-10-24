@@ -20,7 +20,10 @@
                             <a href="/users">User Generator</a>
                         </li>
                         <li @yield('lorem-active')>
-                            <a href="/lorem">Lorem Ipsum Generator</a>
+                            <a href="/lorem">Apple Ipsum Generator</a>
+                        </li>
+                        <li>
+                            <a href="http://p1.mooreberg.me">More</a>
                         </li>
                     </ul>
                 </div>

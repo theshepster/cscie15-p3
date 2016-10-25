@@ -10,7 +10,7 @@ October 27, 2016
 <a href="http://p3.mooreberg.me">p3.mooreberg.me</a>
 
 ## Screencast Demo
-TODO
+<a href="https://youtu.be/4_TrenmHSSE">https://youtu.be/4_TrenmHSSE</a>
 
 ## Overview
 This web app is a developer's best friend. It allows a developer to randomly generate fake users or lorem ipsum text for use when mocking up a website or app. The ipsum text is filled with names of Apple trademarks.

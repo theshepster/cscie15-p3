@@ -35,7 +35,7 @@
                     @endfor
                 </select>
             </label>
-            <button type="submit" class="btn">Generate Ipsum</button>
+            <button type="submit" class="btn-lg btn-primary">Generate Ipsum</button>
         </form>
 
         @if(count($errors) > 0)

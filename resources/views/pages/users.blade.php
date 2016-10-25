@@ -40,7 +40,7 @@
                     <input type="checkbox" name="birthday" @if ($bdays != 0) {{"checked"}} @endif >Include Birthday
                 </label>
             </div>
-            <button type="submit" class="btn">Generate Users</button>
+            <button type="submit" class="btn-lg btn-primary">Generate Users</button>
         </form>
 
         @if(count($errors) > 0)
